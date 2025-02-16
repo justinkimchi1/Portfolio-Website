@@ -12,8 +12,8 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, magnam, corrupti eius possimus repudiandae atque eveniet cumque asperiores id ad, minus vitae et sint dolorum numquam ducimus soluta eligendi commodi.</p>
 
         <div class="btn-box">
-            <button class="btn-1">Resume</button>
-            <button class="btn-2">Projects</button>
+            <a href="{{ url_for('resume') }}" class="btn-1">Resume</a>
+            <a href="{{ url_for('projects') }}" class="btn-2">Projects</a>
         </div>
     </div>
     <div class="img-box">
@@ -29,7 +29,7 @@
         <h2 class="heading">About <span>Me</span></h2>
         <h3>IT <span>Specialist</span></h3>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, ullam fugit sint odio itaque iure facere culpa laborum tempora. Unde dicta pariatur quibusdam enim quod quas? Dolores ducimus provident laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias eligendi commodi sequi! Rem, praesentium voluptatum non iste eaque nisi nam id veritatis at, odio molestias deleniti! Eum, maiores possimus?</p>
-        <a href="#" class="btn-2">Projects</a>
+        <a href="{{ url_for('projects') }}" class="btn-2">Projects</a>
     </div>
 </section>
 <section class="contact-form">

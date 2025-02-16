@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, session
+from flask import Flask, render_template, request, redirect, url_for, session, jsonify
 from flask_session import Session
 import os
 
@@ -34,11 +34,15 @@ def logout():
 
 @app.route('/projects')
 def projects():
+    if 'username' not in session:
+        return redirect(url_for('login'))
     return render_template('projects.html')
 
 
 @app.route('/resume')
 def resume():
+    if 'username' not in session:
+        return redirect(url_for('login'))
     return render_template('resume.html')
 
 if __name__ == '__main__':

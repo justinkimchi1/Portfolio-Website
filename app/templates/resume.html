@@ -3,6 +3,58 @@
 {% block title %}Home - Flask Session{% endblock %}
 
 {% block content %}
-    <h1>Justin Kim Resume</h1>
-    <p>Resume</p>
+<section class="resume">
+    <div class="container">
+        <h2 class="resume-heading">My Resume</h2>
+
+        <!-- Resume PDF Download Button -->
+        <div class="download-btn">
+            <a href="{{ url_for('static', filename='pdf/Justin_Kim_Resume.pdf') }}" download class="btn-1">
+                Download Resume (PDF)
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="resume-about-me">
+    <div class="container">
+        <h3>About Me</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, itaque delectus. Facilis, doloribus? Ullam, ducimus totam exercitationem quis repellendus laudantium expedita earum quos, dolore veniam repellat dolores harum repudiandae ut..</p>
+    </div>
+</section>
+<section class="resume-technical-skills">
+    <div class="container">
+        <h3>Technical Skills</h3>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, inventore excepturi. Molestiae vel excepturi esse quidem dolore at praesentium explicabo quasi mollitia itaque provident, animi cum dolores placeat aliquid aut!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laborum alias asperiores cumque enim officiis et eius nostrum iure ut. Voluptas ipsa magni aperiam repellat dolor placeat, repellendus iusto? Veritatis?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae hic laudantium sit ullam quia ea, eligendi eum nihil doloremque nemo qui quis non facilis! Ipsa iure consectetur deleniti aperiam.</li>
+        </ul>
+    </div>
+</section>
+        
+<section class="resume-projects">
+    <div class="container">
+        <h3>See my Projects by pressing this button</h3>
+        <a href="#" class="btn-2">Projects</a>
+    </div>
+</section>
+            
+        
+<section class="resume-education">
+    <div class="container">
+        <h3>Education</h3>
+        <p>British Columbia Institute of Columbia | Diploma in Computer Information Technology (CIT)</p>
+    </div>
+</section>
+        
+<section class="resume-interests">
+    <div class="container">
+        <h3>Interests</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem natus voluptas, iste nesciunt reprehenderit minus perferendis suscipit quibusdam consequuntur voluptatem recusandae. Illo, in vitae quidem dicta sit similique facilis laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dicta consequatur autem eos ad quas ea tenetur voluptatibus, ut sapiente, laboriosam esse exercitationem atque impedit! Distinctio autem quia ab aspernatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates voluptatibus nisi ullam molestiae porro! Est a officiis similique magni? Provident, eligendi placeat facere blanditiis odit nisi mollitia aliquid beatae! Quis!</p>
+    </div>
+</section>
+        
+
+    
 {% endblock %}

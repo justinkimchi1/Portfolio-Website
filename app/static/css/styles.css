@@ -1,8 +1,26 @@
 .btn-primary {
-    background-color: #ff5733; /* Change button color */
+    background-color: black; 
+    border: none;
     border-radius: 10px;
     outline: none !important;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
     box-shadow: 0 0 5px rgba(255, 87, 51, 0.7);
+    transition: 0.3s ease;
+    color: white;
+    width: 100%;
+    padding: 12px 40px;
+}
+.btn-primary:hover{
+    background-color: #e968f5;
+    box-shadow: 0 0 25px #e968f5;
+    color: white;
+}
+.btn-primary:active {
+    background-color: #d256db;
+    box-shadow: 0 0 30px #d256db;
+    transform: scale(0.98); 
 }
 
 html, body {
@@ -283,6 +301,8 @@ html, body {
 }
 
 .profile{
+    margin-top: 150px;
+    margin-bottom: 390px;
     position: relative;
     width: 100%;
     padding: 40px 0;
@@ -298,3 +318,184 @@ html, body {
   font-weight: 400;
   font-style: normal;
 } */
+
+.resume{
+    margin-top: 150px;
+    align-items: center;
+}
+/* General section styling */
+.resume .container{
+    padding: 80px 12%;
+    text-align: center;
+    width: 100%;
+    min-height: 350px;
+}
+
+.resume .container h2{
+    margin-bottom: 20px;
+}
+/* Alternating section colors */
+.resume-about-me {
+    background: black;
+    color: white;
+    padding: 60px 12%;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+}
+.resume-about-me h3{
+    font-size: 42px;
+}
+.resume-about-me p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+.resume-technical-skills {
+    background: white;
+    color: black;
+    padding: 60px 12%;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+}
+.resume-technical-skills h3{
+    font-size: 42px;
+}
+.resume-technical-skills ul{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+.resume-projects {
+    background: black;
+    color: white;
+    padding: 60px 12%;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+}
+.resume-projects h3{
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+.resume-projects a{
+    text-decoration: none;
+}
+
+
+.resume-education {
+    background: white;
+    color: black;
+    padding: 60px 12%;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+}
+.resume-education h3{
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+.resume-education p{
+    font-size: 18px;
+}
+
+.resume-interests {
+    background: black;
+    color: white;
+    padding: 60px 12%;
+    /* width: 100vw; Full viewport width */
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.resume-interests h3{
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+.resume-interests p{
+    font-size: 18px;
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 9% 8%; */
+    min-height: 400px;
+    gap: 10em;
+    background: black;
+}
+
+.projects .container{
+    /* padding: 80px 12%; */
+    width: 100%;
+    text-align: center;
+    color: #e968f5;
+    text-shadow: 0 0 10px #e968f5;
+}
+.projects h2{
+    margin-top: 40px;
+    font-size: 70px;
+}
+
+.project-1{
+    background: white;
+    color: black;
+    padding: 60px 12%;
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+}
+.project-1 h3{
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+.project-1 p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+.project-2{
+    background: black;
+    color: white;
+    padding: 60px 12%;
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+}
+.project-2 h3{
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+.project-2 p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+.project-3{
+    background: white;
+    color: black;
+    padding: 60px 12%;
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+}
+.project-3 h3{
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+.project-3 p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}

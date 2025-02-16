@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - My Portfolio{% endblock %}
+
+{% block content %}
+<section class="home">
+    <div class="home-content">
+        <h3>Hi</h3>
+
+        <h1>I'm <span>Justin, <br></span>an IT specialist</h1>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, magnam, corrupti eius possimus repudiandae atque eveniet cumque asperiores id ad, minus vitae et sint dolorum numquam ducimus soluta eligendi commodi.</p>
+
+        <div class="btn-box">
+            <button class="btn-1">Resume</button>
+            <button class="btn-2">Projects</button>
+        </div>
+    </div>
+    <div class="img-box">
+        <img src="{{ url_for('static', filename='images/me.JPG') }}" alt="Justin Kim Portrait">
+    </div>
+</section>
+<section class="about">
+    <div class="about-img">
+        <img src="{{ url_for('static', filename='images/king von.jpg') }}" alt="King Von Portrait">
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>IT <span>Specialist</span></h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, ullam fugit sint odio itaque iure facere culpa laborum tempora. Unde dicta pariatur quibusdam enim quod quas? Dolores ducimus provident laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias eligendi commodi sequi! Rem, praesentium voluptatum non iste eaque nisi nam id veritatis at, odio molestias deleniti! Eum, maiores possimus?</p>
+        <a href="#" class="btn-2">Projects</a>
+    </div>
+</section>
+<section class="contact-form">
+    <h2 class="contact-me">Contact <span>Me</span></h2>
+
+    <form action="#">
+
+        <div class="input-box">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+        </div>
+        <div class="input-box">
+            <input type="number" placeholder="Phone Number">
+            <input type="text" placeholder="Subject">
+        </div>
+
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn-1">
+    </form>
+</section>
+{% endblock %}

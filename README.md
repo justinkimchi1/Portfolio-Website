@@ -1,2 +1,1 @@
-# Portfolio-Website
-Portfolio Website for Justin Kim
+# Justin Kim Portfolio Website

@@ -67,3 +67,10 @@ pipx install gunicorn
 sudo chown -R $USER:$USER /var/www/Portfolio-Website
 chmod -R 755 /var/www/Portfolio-Website
 ```
+
+8. `pip` install flask-session in your Virtual Environment
+```
+pip install flask flask-session
+```
+
+9. 

@@ -210,6 +210,11 @@ Make sure your ec2 instance allows inbound traffic from HTTP and HTTPS
 
 Congratulations you have successfully deployed your Portfolio Website to your cloud instance!
 
+## Demo of Successful Deployment
+
+<iframe width="560" height="315" src="https://youtu.be/gRTTvwD1A4Q" frameborder="0" allowfullscreen></iframe>
+
+
 ### Troubleshooting
 **Common problems:**
 

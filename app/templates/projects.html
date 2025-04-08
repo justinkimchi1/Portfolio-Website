@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
-
-{% block title %}Home - Flask Session{% endblock %}
+{% block title %}Projects - Flask Session{% endblock %}
 
 {% block content %}
 <section class="projects">
@@ -8,22 +7,42 @@
         <h2>My Personal Projects</h2>
     </div>
 </section>
+
 <section class="project-1">
-    <div class="project-1-content">
+    <div class="container">
         <h3>Student Web Portal Application</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, minima aspernatur sapiente corporis vero molestias ducimus neque odit eaque nostrum repudiandae eveniet consequuntur? Inventore ratione, distinctio placeat nemo laboriosam quia? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum ratione beatae nemo asperiores ducimus blanditiis, nam excepturi soluta explicabo ut? Accusantium perferendis doloribus porro quo sunt beatae saepe architecto!</p>
+        {% if can_edit %}
+        <form method="POST" action="{{ url_for('save_projects') }}">
+            <textarea name="project_1" rows="10">{{ project_1 }}</textarea>
+        {% else %}
+            <p>{{ project_1 }}</p>
+        {% endif %}
     </div>
 </section>
+
 <section class="project-2">
-    <div class="project-2-content">
+    <div class="container">
         <h3>Arch Linux Shell Scripting Project</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime consequuntur ullam non. Eius voluptatum ipsa totam, provident dolores fugiat esse consectetur incidunt distinctio necessitatibus illum neque minima eaque odio qui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, architecto illo? Omnis neque a sapiente ratione totam vel! Distinctio perferendis doloribus laborum consectetur a fuga quo tempora cum illum hic.</p>
+        {% if can_edit %}
+            <textarea name="project_2" rows="10">{{ project_2 }}</textarea>
+        {% else %}
+            <p>{{ project_2 }}</p>
+        {% endif %}
     </div>
 </section>
+
 <section class="project-3">
-    <div class="project-3-content">
+    <div class="container">
         <h3>Digital Ocean System Setup</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ex ipsam consequatur itaque blanditiis nemo ipsa, sed non et, amet quam cumque est magnam odit praesentium, labore saepe sunt. Error! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus similique assumenda omnis voluptatem unde aspernatur atque, inventore ad id totam ratione officiis? Iste fuga esse numquam sit dignissimos repudiandae corrupti.</p>
+        {% if can_edit %}
+            <textarea name="project_3" rows="10">{{ project_3 }}</textarea>
+            <br>
+            <button type="submit" class="btn-primary">Save Changes</button>
+        </form>
+        {% else %}
+            <p>{{ project_3 }}</p>
+        {% endif %}
     </div>
 </section>
 {% endblock %}
+

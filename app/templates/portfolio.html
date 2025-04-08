@@ -3,6 +3,7 @@
 {% block title %}Home - My Portfolio{% endblock %}
 
 {% block content %}
+<script type="module" defer src="https://cdn.jsdelivr.net/gh/imananoosheh/github-contributions-fetch@latest/github_calendar_widget.js"></script>
 <section class="home">
     <div class="home-content">
         <h3>Hi</h3>
@@ -19,6 +20,9 @@
     <div class="img-box">
         <img src="{{ url_for('static', filename='images/me.JPG') }}" alt="Justin Kim Portrait">
     </div>
+</section>
+<section class="github-contributions">
+    <div id="calendar-component" username="justinkimchi1" theme-color="#e968f5"></div>
 </section>
 <section class="about">
     <div class="about-img">

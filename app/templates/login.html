@@ -13,6 +13,15 @@
             </div>
             <button class="btn-primary" type="submit">Login</button>
         </form>
+        <div class="text-center my-3">
+            <label class="text-muted">OR</label>
+        </div>
+        <div class="google-button">
+            <a href="{{ url_for('login_google') }}" class="btn btn-light border d-flex align-items-center gap-2 w-100 py-2 justify-content-center">
+                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google logo" width="20" height="20">
+                <span>Login with Google</span>
+            </a>
+        </div>
     </div>
 </div>
 {% endblock %}

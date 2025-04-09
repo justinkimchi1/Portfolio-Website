@@ -1,0 +1,2 @@
+.env
+app/flask_session/*
